@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class PhoneGameController : MonoBehaviour {
 
-    public GameObject ziaci;
+    public GameObject students;
     float time;
     // Use this for initialization
     void Start()
     {
         time = Time.time;
+        Student.animationName = "UsingPhone";
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(Time.time.ToString() + "   " + time.ToString());
         if (Time.time - time > 3)
         {
-            TriggerZiak();
+            TriggerStudent();
         }
     }
 
-    void TriggerZiak()
+    void TriggerStudent()
     {
         time = Time.time;
 
-        int ziaciCount = ziaci.GetComponentsInChildren<ZiakController>().Length;
+        int ziaciCount = students.GetComponentsInChildren<Student>().Length;
 
         int ziak = Random.Range(0, ziaciCount);
 
-        ZiakController[] ziakovia = ziaci.GetComponentsInChildren<ZiakController>();
-        ziakovia[ziak].RobNeplechu();
+        Student[] ziakovia = students.GetComponentsInChildren<Student>();
+        ziakovia[ziak].DoYourThing();
     }
 }
