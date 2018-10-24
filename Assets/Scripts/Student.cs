@@ -5,6 +5,8 @@ using UnityEngine;
 public class Student : MonoBehaviour {
 
     public static string animationName;
+    int triggered = 0;
+    int caught = 0;
     Animator animator;
     AudioSource audioData;
     // Use this for initialization
@@ -22,11 +24,17 @@ public class Student : MonoBehaviour {
     {
         Debug.Log(animationName);
         animator.SetTrigger(animationName);
+        triggered++;
     }
 
     private void OnMouseOver()
     {
-        CheckAnimationState(animationName);
+        if (CheckAnimationState(animationName))
+        {
+            animator.SetTrigger("Stop");
+            Debug.Log("chytil si");
+            caught++;
+        }
     }
 
     protected virtual bool CheckAnimationState(string name)

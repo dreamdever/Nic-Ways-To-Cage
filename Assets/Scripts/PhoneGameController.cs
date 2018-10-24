@@ -4,33 +4,55 @@ using UnityEngine;
 
 public class PhoneGameController : MonoBehaviour {
 
-    public GameObject students;
+    public GameObject studentsList;
+    Student[] students;
+    public Timer timer;
     float time;
+    public float countdown;
     // Use this for initialization
     void Start()
     {
+        students = studentsList.GetComponentsInChildren<Student>();
         time = Time.time;
         Student.animationName = "UsingPhone";
+        timer.SetTimer(countdown);
+        timer.StartTimer();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time - time > 3)
+        if (timer.IsRunning())
         {
-            TriggerStudent();
+            if (Time.time - time > 3)
+            {
+                TriggerStudent();
+            }
+        } else
+        {
+            for(int i = 0; i < students.Length; i++)
+            {
+
+            }
         }
+
+       
+
     }
 
     void TriggerStudent()
     {
         time = Time.time;
 
-        int ziaciCount = students.GetComponentsInChildren<Student>().Length;
+        int studentsCount = studentsList.GetComponentsInChildren<Student>().Length;
 
-        int ziak = Random.Range(0, ziaciCount);
+        int randStudent = Random.Range(0, studentsCount);
+     
+        students[randStudent].DoYourThing();
+    }
 
-        Student[] ziakovia = students.GetComponentsInChildren<Student>();
-        ziakovia[ziak].DoYourThing();
+    void OnGameOver()
+    {
+        Debug.Log("si v prdeli");
     }
 }
