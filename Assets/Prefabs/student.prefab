@@ -83,9 +83,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4685445578810154}
-  - component: {fileID: 114156297040037878}
   - component: {fileID: 95504747382897536}
   - component: {fileID: 61354490828606958}
+  - component: {fileID: 114212785900719036}
   m_Layer: 0
   m_Name: student
   m_TagString: Untagged
@@ -355,7 +355,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114156297040037878
+--- !u!114 &114212785900719036
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258409277554094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366db8e2adec78c4a8b08b0afd0bede2, type: 3}
+  m_Script: {fileID: 11500000, guid: 886bc0f703112234199fb597abae9835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212394676060892818
