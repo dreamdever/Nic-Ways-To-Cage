@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Student : MonoBehaviour {
 
-    public static string animationName;
-    int triggered = 0;
-    int caught = 0;
-    Animator animator;
-    AudioSource audioData;
+    protected string animationName;
+    protected int triggered = 0;
+    protected int caught = 0;
+    protected Animator animator;
+    protected AudioSource audioData;
     // Use this for initialization
-    void Start () {
+    protected void Start () {
         animator = gameObject.GetComponent<Animator>();
-        //audioData = GetComponent<AudioSource>();
+        audioData = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -27,7 +27,7 @@ public class Student : MonoBehaviour {
         triggered++;
     }
 
-    private void OnMouseOver()
+    protected void OnMouseOver()
     {
         if (CheckAnimationState(animationName))
         {

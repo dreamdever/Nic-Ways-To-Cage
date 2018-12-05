@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\PathFollower.cs" />
     <Compile Include="Assets\Scripts\PhoneGameController.cs" />
+    <Compile Include="Assets\Scripts\PhoneStudent.cs" />
     <Compile Include="Assets\Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\Scripts\Student.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
