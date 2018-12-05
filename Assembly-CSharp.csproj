@@ -61,11 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LoadSceneOnClick.cs" />
-    <Compile Include="Assets\QuitOnClick.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\PathFollower.cs" />
     <Compile Include="Assets\Scripts\PhoneGameController.cs" />
+    <Compile Include="Assets\Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\Scripts\Student.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\UI\Scripts\ActiveStateToggler.cs" />
@@ -74,6 +73,7 @@
     <Compile Include="Assets\UI\Scripts\DragMe.cs" />
     <Compile Include="Assets\UI\Scripts\DragPanel.cs" />
     <Compile Include="Assets\UI\Scripts\DropMe.cs" />
+    <Compile Include="Assets\UI\Scripts\LoadSceneOnClick.cs" />
     <Compile Include="Assets\UI\Scripts\PanelManager.cs" />
     <Compile Include="Assets\UI\Scripts\ResizePanel.cs" />
     <Compile Include="Assets\UI\Scripts\ScrollDetailTexture.cs" />
