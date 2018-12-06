@@ -14,7 +14,6 @@ public class PhoneGameController : MonoBehaviour {
     {
         students = studentsList.GetComponentsInChildren<Student>();
         time = Time.time;
-        Student.animationName = "UsingPhone";
         timer.SetTimer(countdown);
         timer.StartTimer();
     }
@@ -36,8 +35,6 @@ public class PhoneGameController : MonoBehaviour {
             }
         }
 
-       
-
     }
 
     void TriggerStudent()
@@ -47,7 +44,8 @@ public class PhoneGameController : MonoBehaviour {
         int studentsCount = studentsList.GetComponentsInChildren<Student>().Length;
 
         int randStudent = Random.Range(0, studentsCount);
-     
+
+        Debug.Log(students[randStudent]);
         students[randStudent].DoYourThing();
     }
 
