@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Student : MonoBehaviour {
 
@@ -9,10 +10,11 @@ public class Student : MonoBehaviour {
     protected int caught = 0;
     protected Animator animator;
     protected AudioSource audioData;
+    public UnityEvent OnCaught = new UnityEvent();
     // Use this for initialization
     protected void Start () {
         animator = gameObject.GetComponent<Animator>();
-        audioData = GetComponent<AudioSource>();
+        //audioData = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -24,7 +26,6 @@ public class Student : MonoBehaviour {
     {
         Debug.Log(animationName);
         animator.SetTrigger(animationName);
-        triggered++;
     }
 
     protected void OnMouseOver()
@@ -32,8 +33,7 @@ public class Student : MonoBehaviour {
         if (CheckAnimationState(animationName))
         {
             animator.SetTrigger("Stop");
-            Debug.Log("chytil si");
-            caught++;
+            OnCaught.Invoke();
         }
     }
 
@@ -41,4 +41,5 @@ public class Student : MonoBehaviour {
     {
         return Input.GetMouseButtonDown(0) && animator.GetCurrentAnimatorStateInfo(0).IsName(name);
     }
+    
 }
