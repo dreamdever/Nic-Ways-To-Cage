@@ -210,12 +210,12 @@ Prefab:
     - target: {fileID: 224397117749992904, guid: a75337579bd8dd345b6f1af5f58dbce1,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -459.05
+      value: -461.25
       objectReference: {fileID: 0}
     - target: {fileID: 224397117749992904, guid: a75337579bd8dd345b6f1af5f58dbce1,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -200.72
+      value: -201.03
       objectReference: {fileID: 0}
     - target: {fileID: 224397117749992904, guid: a75337579bd8dd345b6f1af5f58dbce1,
         type: 2}
@@ -1009,8 +1009,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.1
-    height: 0.1
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 26.991467
@@ -1145,12 +1145,12 @@ Prefab:
     - target: {fileID: 224515706873416636, guid: 4f683cba346e0464c8e62887d89152bb,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -459.02
+      value: -461.18
       objectReference: {fileID: 0}
     - target: {fileID: 224515706873416636, guid: 4f683cba346e0464c8e62887d89152bb,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -204.87
+      value: -204.33
       objectReference: {fileID: 0}
     - target: {fileID: 224515706873416636, guid: 4f683cba346e0464c8e62887d89152bb,
         type: 2}
