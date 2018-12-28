@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: de07530c38ce45a46a781853e63148f0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: cf8d1412dc1b994489f4cf8b7dc06294
   - enabled: 1
     path: Assets/Scenes/scene_phone.unity
     guid: a474c0d5d553ad8478fcbf2e2f329a78
+  - enabled: 1
+    path: Assets/Scenes/Kviz.unity
+    guid: e9de2a5a52dfd2644be7f953715a05b7
   m_configObjects: {}
