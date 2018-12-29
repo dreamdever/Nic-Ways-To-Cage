@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Student : MonoBehaviour {
 
-    protected string animationName;
+    public string animationName;
     protected int triggered = 0;
     protected int caught = 0;
     protected Animator animator;
@@ -30,6 +30,7 @@ public class Student : MonoBehaviour {
 
     protected void OnMouseOver()
     {
+        
         if (CheckAnimationState(animationName))
         {
             animator.SetTrigger("Stop");
