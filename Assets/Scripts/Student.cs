@@ -11,10 +11,11 @@ public class Student : MonoBehaviour {
     protected Animator animator;
     protected AudioSource audioData;
     public UnityEvent OnCaught = new UnityEvent();
+
     // Use this for initialization
     protected void Start () {
         animator = gameObject.GetComponent<Animator>();
-        //audioData = GetComponent<AudioSource>();
+        audioData = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -33,7 +34,7 @@ public class Student : MonoBehaviour {
         
         if (CheckAnimationState(animationName))
         {
-            animator.SetTrigger("Stop");
+            animator.ResetTrigger(animationName);
             OnCaught.Invoke();
         }
     }
@@ -41,6 +42,10 @@ public class Student : MonoBehaviour {
     protected virtual bool CheckAnimationState(string name)
     {
         return Input.GetMouseButtonDown(0) && animator.GetCurrentAnimatorStateInfo(0).IsName(name);
+    }
+
+    protected void AnimationAudio() {
+        audioData.Play();
     }
     
 }
