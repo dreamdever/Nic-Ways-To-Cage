@@ -45,3 +45,30 @@ TagManager:
   - name: Student_aula
     uniqueID: 461909963
     locked: 0
+  - name: operadla3
+    uniqueID: 2205097535
+    locked: 0
+  - name: studenti3
+    uniqueID: 3026976309
+    locked: 0
+  - name: lavica3
+    uniqueID: 2034252223
+    locked: 0
+  - name: operadla2
+    uniqueID: 680968991
+    locked: 0
+  - name: studenti2
+    uniqueID: 3122261061
+    locked: 0
+  - name: lavica2
+    uniqueID: 855917961
+    locked: 0
+  - name: operadla1
+    uniqueID: 3262152769
+    locked: 0
+  - name: studenti1
+    uniqueID: 3303596359
+    locked: 0
+  - name: lavica1
+    uniqueID: 213437745
+    locked: 0

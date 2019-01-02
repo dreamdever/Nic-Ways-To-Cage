@@ -9,13 +9,12 @@ public class Student : MonoBehaviour {
     protected int triggered = 0;
     protected int caught = 0;
     protected Animator animator;
-    protected AudioSource audioData;
     public UnityEvent OnCaught = new UnityEvent();
+    private AudioSource audioData;
 
     // Use this for initialization
     protected void Start () {
         animator = gameObject.GetComponent<Animator>();
-        audioData = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -34,7 +33,9 @@ public class Student : MonoBehaviour {
         
         if (CheckAnimationState(animationName))
         {
-            animator.ResetTrigger(animationName);
+            audioData.Stop();
+            transform.Find("sounds/Caught").gameObject.GetComponent<AudioSource>().Play();
+            animator.SetTrigger("Stop");
             OnCaught.Invoke();
         }
     }
@@ -45,6 +46,7 @@ public class Student : MonoBehaviour {
     }
 
     protected void AnimationAudio() {
+        audioData = transform.Find("sounds/" + animationName).gameObject.GetComponent<AudioSource>();
         audioData.Play();
     }
     

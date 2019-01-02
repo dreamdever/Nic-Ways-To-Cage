@@ -46,4 +46,9 @@ public class Timer : MonoBehaviour {
     {
         return running;
     }
+
+    public float GetTime()
+    {
+        return timeLeft;
+    }
 }

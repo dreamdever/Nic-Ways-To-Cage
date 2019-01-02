@@ -1,0 +1,646 @@
+fileFormatVersion: 2
+guid: 5ab9eee08c7a84c4c945e5bc1c8fd4d9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: blond_head_1
+    21300002: blond_torso
+    21300004: blond_shoulder
+    21300006: blond_arm
+    21300008: blond_hand
+    21300010: blond_phone
+    21300012: blond_pencil
+    21300014: blond_head_2
+    21300016: blond_head_3
+    21300018: asian_head_1
+    21300020: asian_head_2
+    21300022: asian_torso
+    21300024: asian_shoulder
+    21300026: asian_arm
+    21300028: asian_hand
+    21300030: asian_phone
+    21300032: black_torso
+    21300034: black_head_1
+    21300036: black_head_2
+    21300038: black_head_3
+    21300040: black_shoulder
+    21300042: black_arm
+    21300044: black_hand
+    21300046: black_phone
+    21300048: bottle
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blond_head_1
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 904
+        width: 96
+        height: 123
+      alignment: 9
+      pivot: {x: 0.44280815, y: 0.031305082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc238b133a3b8504aa8c018737d4abe9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blond_torso
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 642
+        width: 178
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc78d1a8877ae1c4387579304db121b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blond_shoulder
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 738
+        width: 41
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5222436, y: 0.8561099}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797c313c8415aad4792b238f05d0e68d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blond_arm
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 641
+        width: 35
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8334154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e6d40b08e8c6e40a17c90288ab68c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blond_hand
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 566
+        width: 26
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5701529, y: 0.9559948}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7b4bf27ff4be348bb185eccc9674b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blond_phone
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 511
+        width: 49
+        height: 44
+      alignment: 9
+      pivot: {x: 0.14637102, y: 0.25127757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeeff3c6dc8d46f4a952ce7de1ac8b5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blond_pencil
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 512
+        width: 46
+        height: 52
+      alignment: 9
+      pivot: {x: 0.2026115, y: 0.20185031}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bb3b3bd484cea44868e4db4aa7c65f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blond_head_2
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 908
+        width: 102
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5082027, y: 0.07468414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f4b438ebb8bed4b80bb05c14aeda81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blond_head_3
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 912
+        width: 96
+        height: 125
+      alignment: 9
+      pivot: {x: 0.4371643, y: 0.047428712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c00e8d5bf0da144819a1d779515db6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asian_head_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 906
+        width: 101
+        height: 123
+      alignment: 9
+      pivot: {x: 0.48130164, y: 0.034259085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d45e1e32df7874a9844f53ba3d6f3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asian_head_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 900
+        width: 106
+        height: 123
+      alignment: 9
+      pivot: {x: 0.47624466, y: 0.044495124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8369ff5a726a63343ad977beb9ca5ed6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asian_torso
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 646
+        width: 174
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf10e6ce469b934e907c68fd902c72e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asian_shoulder
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 737
+        width: 41
+        height: 105
+      alignment: 9
+      pivot: {x: 0.48077402, y: 0.86034983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2762e915c9b333c44a9ff944bdf6c461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asian_arm
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 639
+        width: 35
+        height: 94
+      alignment: 9
+      pivot: {x: 0.4999998, y: 0.83913535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd39331ca127ad74f9fb7f94a85e60fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asian_hand
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 577
+        width: 27
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5868587, y: 0.8398494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b013f2c803909b741ba445b85b5b23cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asian_phone
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 585
+        width: 53
+        height: 44
+      alignment: 9
+      pivot: {x: 0.11979229, y: 0.23829928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb40475e7891ea64ea98c5c951f60d4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_torso
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1545
+        width: 175
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a84800cd483b804b86518e505dbaf72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_head_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1797
+        width: 95
+        height: 118
+      alignment: 9
+      pivot: {x: 0.4585133, y: 0.037400067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bb8a5be14be174aa70a2b7c3fcd3d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_head_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1792
+        width: 96
+        height: 126
+      alignment: 9
+      pivot: {x: 0.45799446, y: 0.058229476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d46d420fa6b1cf47b083cc52bf5ae78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_head_3
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1796
+        width: 95
+        height: 117
+      alignment: 9
+      pivot: {x: 0.46604165, y: 0.0105752535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac61c42009c7d34a86fdbd65c329bc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_shoulder
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1674
+        width: 41
+        height: 112
+      alignment: 9
+      pivot: {x: 0.47810093, y: 0.7966189}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10a22cfa4a70314d81c2ef604cc30df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_arm
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1577
+        width: 34
+        height: 94
+      alignment: 9
+      pivot: {x: 0.48674697, y: 0.86911595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ece03884c3fc78449eab495c02072b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_hand
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1520
+        width: 30
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5600817, y: 0.8965381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd2c8367a14cbd438448cd1ec568af6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_phone
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1453
+        width: 47
+        height: 46
+      alignment: 9
+      pivot: {x: 0.09732778, y: 0.28449017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7994f370143255446980388327da709f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottle
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1275
+        width: 133
+        height: 110
+      alignment: 9
+      pivot: {x: 0.3551599, y: 0.91905075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872581584c0300146992638304ca22e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ec09c31bb91ca4c4bb0ee134c546e60a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
