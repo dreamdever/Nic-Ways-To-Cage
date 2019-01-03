@@ -15,6 +15,14 @@ public class PhoneGameController : MonoBehaviour {
     float time;
     public float countdown;
     public GameObject resultPanel;
+    public Text tip;
+
+    private readonly string[] tips = {
+        "krista",
+        "piči",
+        "máriu"
+    };
+
     // Use this for initialization
     void Start()
     {
@@ -49,7 +57,7 @@ public class PhoneGameController : MonoBehaviour {
                 TriggerStudent();
                 triggered++;
             }
-        } else
+        } else if (!this.gameover)
         {
             OnGameOver();
         }
@@ -72,6 +80,7 @@ public class PhoneGameController : MonoBehaviour {
         timer.SetTimer(0);
         this.gameover = true;
         result.text = "Získal si " + catched + " z " + triggered + " bodov";
+        tip.text = tips[Random.Range(0, tips.Length)];
         resultPanel.SetActive(true);
 
     }
