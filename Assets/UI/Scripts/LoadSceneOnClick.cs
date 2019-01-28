@@ -9,4 +9,11 @@ public class LoadSceneOnClick : MonoBehaviour {
     {
         SceneManager.LoadScene(sceneIndex);
     }
+
+    public void LoadRandom()
+    {
+        int[] levels = { 2,4 };
+        int randLevel = Random.Range(0, levels.Length);
+        SceneManager.LoadScene(levels[randLevel]);
+    }
 }

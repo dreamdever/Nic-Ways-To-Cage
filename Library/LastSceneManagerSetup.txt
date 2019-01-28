@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/scene_neviem.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/Intro.unity
-=======
-- path: Assets/Scenes/Kviz.unity
->>>>>>> 9a32f88d482b16f2e6e93363c573707fa3921a4d
->>>>>>> master
+- path: Assets/Scenes/MainMenu.unity
   isLoaded: 1
   isActive: 1

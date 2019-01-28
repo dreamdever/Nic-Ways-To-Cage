@@ -18,9 +18,19 @@ public class PhoneGameController : MonoBehaviour {
     public Text tip;
 
     private readonly string[] tips = {
-        "krista",
-        "piči",
-        "máriu"
+        "Pokiaľ sa študent hrá s telefónom počas vyučovania a nereaguje na upozornenie, pedagóg môže zobrať telefón do konca vyučovania. V prípade, že sa daná situácia vyskytuje pravidelne, je vhodné dohodnúť si pravidlá s triedou. ",
+        "Pokiaľ študent kreslí nevhodné obrázky a nereaguje na upozornenie, je potrebné dohodnúť si individuálny pohovor s ním a jeho rodičmi. ",
+        "Pokiaľ študent ruší na vyučovaní, treba zvážiť možnosti, prečo študent vyrušuje (psychická podstata problému, hyperaktivita). Pokiaľ má študent spravenú úlohu zadanú učiteľom a napriek tomu vyrušuje, treba mu zadať viac práce.",
+        "Pokiaľ má študent nevhodné poznámky a nereaguje na upozornenie, je potrebné dohodnúť si individuálny pohovor s rodičmi a zvážiť výchovného poradcu.  ",
+        "Pokiaľ študent spí na vyučovaní, je potrebné uskutočniť individuálny rozhovor, či sa niečo nedeje v domácnosti študenta, čo mu bráni v spánku, alebo či študent neberie lieky spôsobujúce utlmenie a ospalosť.",
+        "Pokiaľ je študent opitý, pedagóg musí zavolať rodičom, nech si vyzdvihnú študenta zo školy. Treba zvážiť zníženú známku zo správania. ",
+        "Pokiaľ žiak fyzicky napadne spolužiaka, pedagóg musí dostať študentov od seba a následne zavolať rodičom oboch z nich. Treba zvážiť zníženú známku zo správania.",
+        "Pokiaľ sú študenti prichytení, ako fajčia, je potrebné zavolať rodičom, oboznámiť ich so situáciou a zvážiť výchovného poradcu.",
+        "Pokiaľ sa študent správa vulgárne voči pedagógovi a nereaguje na upozornenie, je vhodné zobrať študenta k riaditeľovi a oznámiť rodičom študentove správanie. Treba zvážiť zníženú známku zo správania.",
+        "Pokiaľ študent ničí školský majetok a pokračuje napriek upozorneniu, je nutné so správaním oboznámiť rodičov a požadovať finančné nahradenie škody.",
+        "Pokiaľ študent dostane epileptický záchvat, pedagóg je povinný okamžite podať prvú pomoc a zabezpečiť lekársku starostlivosť.",
+        "Pokiaľ v škole nastane požiar, pedagóg je povinný okamžite evakuovať študentov a okamžite spustiť požiarny alarm."
+
     };
 
     // Use this for initialization

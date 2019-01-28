@@ -2214,6 +2214,41 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1297595397}
+    - target: {fileID: 224151913915303698, guid: c64e24ec9da3bae49a974fc97dbeebf8,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 224151913915303698, guid: c64e24ec9da3bae49a974fc97dbeebf8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.1753
+      objectReference: {fileID: 0}
+    - target: {fileID: 224151913915303698, guid: c64e24ec9da3bae49a974fc97dbeebf8,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 167.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 224151913915303698, guid: c64e24ec9da3bae49a974fc97dbeebf8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -32.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 224151913915303698, guid: c64e24ec9da3bae49a974fc97dbeebf8,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 671.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114116440082999488, guid: c64e24ec9da3bae49a974fc97dbeebf8,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114116440082999488, guid: c64e24ec9da3bae49a974fc97dbeebf8,
+        type: 2}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c64e24ec9da3bae49a974fc97dbeebf8, type: 2}
   m_IsPrefabAsset: 0
