@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,7 +21,7 @@ public class Kviz
 
     public event System.EventHandler Stop;
 
-    public Kviz(Object[] tlacidla, int kod, Text text, Button tlacidlo)
+    public Kviz(Object[] tlacidla,int kod,Text text,Button tlacidlo)
     {
         KategoriaOtazok kategoria = new KategoriaOtazok();
         Subor = kategoria.Subor[kod];
@@ -31,8 +32,13 @@ public class Kviz
         for (int i = 0; i < tlacidla.Length; i++)
         {
             Toggle button = (Toggle)tlacidla[i];
-            button.onValueChanged.AddListener(delegate { Click(button); });
-            Tlacidla.Add(button);
+            if (button.tag == "Odpoved")
+            {
+                button.onValueChanged.AddListener(delegate { Click(button); });
+                Tlacidla.Add(button);
+            }
+            
+
         }
         tlacidlo.onClick.AddListener(delegate { Stlacenie(tlacidlo); });
         Dalej = false;
@@ -70,14 +76,18 @@ public class Kviz
 
             }
         }
-
-
+        
+        
     }
 
     private void Stlacenie(Button button)
     {
         if (Koniec == true)
+        {
+            Stop(this, System.EventArgs.Empty);
             return;
+        }
+            
 
         //Overenie
         int pocitadlo;
@@ -93,7 +103,7 @@ public class Kviz
             foreach (Toggle odpoved in Tlacidla)
                 if (odpoved.isOn == true)
                     Odpoved = odpoved;
-
+            
             if (Odpoved == Spravna)
             {
                 Body++;
@@ -128,18 +138,43 @@ public class Kviz
         {
             Otazka.text = otazky.Otazka;
 
+            System.Random rand = new System.Random();
+            List<Toggle> randomtlacidla = Tlacidla.OrderBy(c => rand.Next()).Select(c => c).ToList();
+            ColorBlock color = randomtlacidla[0].colors;
+            color.normalColor = Color.white;
+            color.highlightedColor = Color.white;
+            
 
+            for (int i = 0; i < randomtlacidla.Count; i++)
+            {
+                if (i == 0)
+                {
+                    randomtlacidla[i].GetComponentInChildren<Text>().text = otazky.NextSpravna();
+                    randomtlacidla[i].GetComponentInChildren<Text>().color = Color.black;
+                    Spravna = randomtlacidla[i];
+                    Spravna.isOn = false;
+                    Spravna.colors = color;
+                }
+                else
+                {
+                    randomtlacidla[i].GetComponentInChildren<Text>().text = otazky.NextNespravna();
+                    randomtlacidla[i].GetComponentInChildren<Text>().color = Color.black;
+                    randomtlacidla[i].isOn = false;
+                    randomtlacidla[i].colors = color;
+                }
+            }
+            /*
             List<int> Indexy = new List<int>();
 
             //Vytvorenie listu s počtom indexov
-            for (int i = 0; i < Tlacidla.Count - 1; i++)
+            for (int i = 0; i < Tlacidla.Count; i++)  
                 Indexy.Add(i);
 
             //Vybratie nahodneho tlačidla pre spravnu odpoved
             System.Random random = new System.Random();
-            int temp = random.Next(0, Indexy.Count - 1);
+            int temp = random.Next(Indexy.Count);
 
-            Tlacidla[Indexy[temp]].GetComponentInChildren<Text>().text = otazky.Spravne[random.Next(0, otazky.Spravne.Count)];
+            Tlacidla[Indexy[temp]].GetComponentInChildren<Text>().text = otazky.NextSpravna();
             Tlacidla[Indexy[temp]].GetComponentInChildren<Text>().color = Color.black;
             Spravna = Tlacidla[Indexy[temp]];
             Spravna.isOn = false;
@@ -153,19 +188,17 @@ public class Kviz
             //Vybratie zvyšných odpovedí 
             while (Indexy.Count != 0)
             {
-                temp = random.Next(0, Indexy.Count - 1);
-                int indexnespravna = random.Next(0, otazky.Nespravne.Count - 1);
-                Tlacidla[Indexy[temp]].GetComponentInChildren<Text>().text = otazky.Nespravne[indexnespravna];
+                temp = random.Next(Indexy.Count);
+                Tlacidla[Indexy[temp]].GetComponentInChildren<Text>().text = otazky.NextNespravna();
                 Tlacidla[Indexy[temp]].GetComponentInChildren<Text>().color = Color.black;
                 Tlacidla[Indexy[temp]].isOn = false;
                 Tlacidla[Indexy[temp]].colors = color;
-                otazky.Nespravne.RemoveAt(indexnespravna);
                 Indexy.RemoveAt(temp);
 
             }
-
+            */
             Button.GetComponentInChildren<Text>().text = "Vyhodnotiť";
-
+            
         }
 
     }
@@ -175,7 +208,7 @@ public class Kviz
         Koniec = true;
         Otazka.text = string.Format("Počet správnych odpovedí {0}", Body.ToString());
         Button.GetComponentInChildren<Text>().text = "Koniec";
-        Stop(this, System.EventArgs.Empty);
+        
     }
 
 }

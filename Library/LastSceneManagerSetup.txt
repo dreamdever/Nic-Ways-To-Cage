@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Intro.unity
+=======
+- path: Assets/Scenes/Kviz.unity
+>>>>>>> 9a32f88d482b16f2e6e93363c573707fa3921a4d
   isLoaded: 1
   isActive: 1
