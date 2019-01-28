@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PathNode
   - Odpoved
+  - zachod
   layers:
   - Default
   - TransparentFX
@@ -72,4 +73,10 @@ TagManager:
     locked: 0
   - name: lavica1
     uniqueID: 213437745
+    locked: 0
+  - name: zachod
+    uniqueID: 2675986405
+    locked: 0
+  - name: ui
+    uniqueID: 4147068829
     locked: 0

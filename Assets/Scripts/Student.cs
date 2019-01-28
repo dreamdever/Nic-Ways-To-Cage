@@ -11,6 +11,7 @@ public class Student : MonoBehaviour {
     protected Animator animator;
     public UnityEvent OnCaught = new UnityEvent();
     private AudioSource audioData;
+    private bool inCollision = false;
 
     // Use this for initialization
     protected void Start () {
@@ -19,7 +20,7 @@ public class Student : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        Debug.Log(inCollision);
     }
 
     public virtual void DoYourThing()
@@ -31,7 +32,7 @@ public class Student : MonoBehaviour {
     protected void OnMouseOver()
     {
         
-        if (CheckAnimationState(animationName))
+        if (CheckAnimationState(animationName) && !inCollision)
         {
             audioData.Stop();
             transform.Find("sounds/Caught").gameObject.GetComponent<AudioSource>().Play();
@@ -49,5 +50,18 @@ public class Student : MonoBehaviour {
         audioData = transform.Find("sounds/" + animationName).gameObject.GetComponent<AudioSource>();
         audioData.Play();
     }
-    
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "zachod")
+        {
+            inCollision = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        inCollision = false;
+    }
+
 }

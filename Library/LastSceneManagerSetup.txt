@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Kviz.unity
+- path: Assets/Scenes/scene_neviem.unity
   isLoaded: 1
   isActive: 1
